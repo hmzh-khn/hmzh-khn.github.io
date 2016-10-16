@@ -3,18 +3,18 @@ email: hmzh.khn@gmail.com
 baseurl: "khanh.github.io"
 paginate: 5
 paginate_path: "/blog/page-:num"
-google_analytics: 
+google_analytics: UA-53666618-1
 
 # SEO settings
-title: Trophy
-description: 
+title: Hamzah Khan
+description: Muslim American, JS Developer, Harvey Mudd Student, and more
 url: ""
 twitter_username: 
 default_img: 
 
 # Profile settings
 name: Hamzah Khan
-profile_img: 
+profile_img: https://avatars1.githubusercontent.com/u/2308491?v=2&s=460
 profile: 
 social:
   github: khanh111
@@ -27,6 +27,7 @@ permalink: /:year/:month/:day/:title/
 
 # Sass
 sass:
+  sass_dir: _sass
   style: compressed
 
 # Gems
