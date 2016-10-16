@@ -17,7 +17,7 @@ name: Hamzah Khan
 profile_img: https://avatars1.githubusercontent.com/u/2308491?v=2&s=460
 profile: 
 social:
-  github: khanh111
+  github: https://github.com/khanh111
 
 # Build settings
 include: ["_categories"]
