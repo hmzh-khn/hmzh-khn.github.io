@@ -8,16 +8,18 @@ google_analytics: UA-53666618-1
 # SEO settings
 title: Hamzah Khan
 description: Muslim American, JS Developer, Harvey Mudd Student, and more
-url: ""
-twitter_username: 
+url: "Hamzah Khan's website"
+twitter_username: hamzahikhan
 default_img: 
 
 # Profile settings
 name: Hamzah Khan
-profile_img: https://avatars1.githubusercontent.com/u/2308491?v=2&s=460
+profile_img: /assets/img/Self_Photo.jpg
 profile: 
 social:
   github: https://github.com/khanh111
+  twitter: twitter.com/hamzahikhan
+  stackoverflow: users/1701791/h-khan
 
 # Build settings
 include: ["_categories"]
