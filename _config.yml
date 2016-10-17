@@ -10,7 +10,7 @@ title: Hamzah Khan
 description: Muslim American, JS Developer, Harvey Mudd Student, and more
 url: "Hamzah Khan's website"
 twitter_username: hamzahikhan
-default_img: 
+default_img: /assets/img/Self_Photo.jpg
 
 # Profile settings
 name: Hamzah Khan
@@ -18,7 +18,7 @@ profile_img: /assets/img/Self_Photo.jpg
 profile: 
 social:
   github: https://github.com/khanh111
-  twitter: twitter.com/hamzahikhan
+  twitter: http://twitter.com/hamzahikhan
   stackoverflow: users/1701791/h-khan
 
 # Build settings
