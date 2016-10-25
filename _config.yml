@@ -18,8 +18,9 @@ profile_img: /assets/img/Self_Photo.jpg
 profile: 
 social:
   github: https://github.com/khanh111
-  twitter: http://twitter.com/hamzahikhan
+  linkedin: https://www.linkedin.com/in/hamzah-khan-02a02b59
   youtube: https://www.youtube.com/channel/UCGAGEYUAp22WBrDplYAn5Bw
+  twitter: http://twitter.com/hamzahikhan
 
 # Build settings
 include: ["_categories"]

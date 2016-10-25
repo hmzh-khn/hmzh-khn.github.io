@@ -7,3 +7,9 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+*.fls
+*.log
+*.gz
+*.out
+*.aux
+*.fdb_latexmk
