@@ -4,7 +4,7 @@ title: "First Post"
 date: 2016-10-15
 categories:
   - All Posts
-description: 
+description: My first post!
 image: /assets/img/Self_Photo.jpg
 ---
 Well, I finally went and made a website. Here it is. It's a bit empty for now, 
@@ -17,7 +17,7 @@ Portland, OR. I'm a junior computer science and engineering student at Harvey
 Mudd College, interested in microprocessor systems design and artifical 
 intelligence. I'm especially interested in projects that combine both.
 
-[resume]: /assets/files/resume/site_resume_fall2016.pdf
+[resume]: /assets/files/resume/HamzahKhanResume.pdf
 [linkedin]: https://www.linkedin.com/in/hamzah-khan-02a02b59
 [github]: https://github.com/khanh111
 [youtube]: https://www.youtube.com/channel/UCGAGEYUAp22WBrDplYAn5Bw
