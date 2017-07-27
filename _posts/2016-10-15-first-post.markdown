@@ -17,7 +17,7 @@ Portland, OR. I'm a junior computer science and engineering student at Harvey
 Mudd College, interested in microprocessor systems design and artifical 
 intelligence. I'm especially interested in projects that combine both.
 
-[resume]: /assets/files/resume/HamzahKhanResume_site.pdf
+[resume]: /assets/files/resume/HKResume.pdf
 [linkedin]: https://www.linkedin.com/in/hamzah-khan-02a02b59
 [github]: https://github.com/khanh111
 [youtube]: https://www.youtube.com/channel/UCGAGEYUAp22WBrDplYAn5Bw
