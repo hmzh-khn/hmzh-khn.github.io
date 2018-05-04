@@ -8,8 +8,7 @@ categories:
 description: An unscented Kalman filter designed for my Autonomous Robotic Navigation class.
 image: /assets/img/UKF.jpg
 ---
-
-*Everything described in this post was developed as a partnership between myself and James Palmer HMC '18. He deserves half the credit for it all.*
+*Everything described in this post was developed as a partnership between myself and James Palmer HMC '18. He deserves half the credit for it all. The header photo is from [this paper][image]*
 
 This past semester, my friend James Palmer and I been in Autonomous Robotic Navigation, a class covering the control, localization, and motion planning of mobile robots. We've been using the Pololu Romi robot to implement a number of robotic algorithms, including point tracking, odometry, particle filtering, and probabilistic road maps. Our code for this class is available on [Github][code].
 
@@ -24,3 +23,4 @@ Here's a [video][UKF-control-vid] of the UKF working to control a Pololu Romi ro
 [final-pres]: https://docs.google.com/presentation/d/1piwF_LOPxW4Z-kkl0YXN7IbtVDWnmhYHtcBYQM_RfJ0/edit?usp=sharing
 [code]: https://github.com/khanh111/E160_Code
 [paper]: https://ieeexplore.ieee.org/document/1271397/
+[image]: https://www.sciencedirect.com/science/article/pii/S014102961631313X
