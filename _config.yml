@@ -17,10 +17,11 @@ name: Hamzah Khan
 profile_img: /assets/img/Self_Photo.jpg
 profile: 
 social:
-  github: https://github.com/khanh111
+  github: https://github.com/hmzh-khn
   linkedin: https://www.linkedin.com/in/hamzah-khan-02a02b59
   youtube: https://www.youtube.com/channel/UCGAGEYUAp22WBrDplYAn5Bw
   twitter: http://twitter.com/hamzahikhan
+  instagram: https://instagram.com/hamzahs_view
 
 # Build settings
 include: ["_categories"]
