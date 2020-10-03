@@ -15,11 +15,13 @@ image: /assets/img/liberalism_intro_ch1_cover.jpeg
 
 
 In the first two sections of __Why Liberalism Failed__, Deneen examines the revolutions in thought that gave rise to liberalism and fueled its adherent nations' victories over competing ideologies of the 20th Century (fascism and communism) and built societies with strong protections for human rights. In particular, he highlights three:
+
 1. A system of politics "based upon the reliability of "the low" rather than aspiration to "the high"" (24). In particular, he cites Machiavellian writings that society should be structured to harness selfish desires for power, money, etc. rather than moderation of these desires. To me, this brings to mind a common description in political studies circles of liberal democracy as the least bad system of government.
 2. A replacement of long standing social norms and customs as guides for action with an individualistic rationality, deviations from which could be corrected by legal prohibitions and sanctions of a centralized political state (26). In particular, "what were viewed as the essential supports for a training in virtue -- and hence, preconditions for liberty from tyranny -- came to be viewed as sources of oppression arbitrariness, and limitation" (25). 
 3. Overturning "philosophical traditions... [such as] emphasis upon acceptance in favor of belief in an expanding and potentially limitless human capacity to control circumstance and effect human desires upon the [natural] world" (26). In particular, Deneen references the use of science and technology in the dominion of humanity over natural limits, for the purposes of economic growth and the expansion of individual liberty.
 
 These preliberal revolutions in thought lead to the following philosophical principles of liberalism.
+
 1. Liberal volunteerism - The idea the that legitimacy is conferred by the unfettered and autonomous choice of individuals (31).
 2. The war against nature - Liberalism rejects early political thought (especially Aristotelian thought) that everything has a basic function, given by nature and unalterable, in favor of two replacements that now, Deneen writes, form the dividing line between conservative and progressive liberalism.
   * Conservative liberalism insists "that man should employ natural science and a transformed economic system to seek a mastery of nature" (35).
