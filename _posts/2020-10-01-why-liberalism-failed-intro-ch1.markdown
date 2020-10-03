@@ -39,6 +39,10 @@ There's also a human element to the success of a society, and it's often hard to
 
 The arguments Deneen makes in first bit of the book feel new and it seems plausible that liberalism has surfaced (and perhaps even caused to some extent) many modern problems from areas where it lacks self-consistency (i.e. rights that conflict with one another). The description of the feedback loop doesn't quite sit right with me yet, so I'm interested to read on as he develops his argument.
 
+
+* test
+
+
 [1] Deneen, Patrick J, 2018. _Why Liberalism Failed_. https://www.amazon.com/-/es/Patrick-J-Deneen/dp/0300223447
 
 [2] Cover image from https://d24fkeqntp1r7r.cloudfront.net/wp-content/uploads/2019/04/15195700/statue-of-liberty-1764956_1920.jpg
