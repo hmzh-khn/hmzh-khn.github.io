@@ -8,6 +8,7 @@ categories:
 description: A reflection on the introduction and Chapter 1 of Dr. Patrick J. Deneen's _Why Liberalism Failed_ (2018).
 image: /assets/img/liberalism_intro_ch1_cover.jpeg
 ---
+
 *I've decided to start leaving reading reflections on my website to help me build the habit of writing on the things I read. I hope that whoever comes across this might find some value in it. That said, these will be incomplete thoughts that I'm choosing to publish on the Internet, so I reserve the right to change my mind in the future.*
 
 
@@ -17,16 +18,17 @@ image: /assets/img/liberalism_intro_ch1_cover.jpeg
 In the first two sections of __Why Liberalism Failed__, Deneen examines the revolutions in thought that gave rise to liberalism and fueled its adherent nations' victories over competing ideologies of the 20th Century (fascism and communism) and built societies with strong protections for human rights. In particular, he highlights three:
 
 1. A system of politics "based upon the reliability of "the low" rather than aspiration to "the high"" (24). In particular, he cites Machiavellian writings that society should be structured to harness selfish desires for power, money, etc. rather than moderation of these desires. To me, this brings to mind a common description in political studies circles of liberal democracy as the least bad system of government.
-2. A replacement of long standing social norms and customs as guides for action with an individualistic rationality, deviations from which could be corrected by legal prohibitions and sanctions of a centralized political state (26). In particular, "what were viewed as the essential supports for a training in virtue -- and hence, preconditions for liberty from tyranny -- came to be viewed as sources of oppression arbitrariness, and limitation" (25). 
+
+2. A replacement of long standing social norms and customs as guides for action with an individualistic rationality, deviations from which could be corrected by legal prohibitions and sanctions of a centralized political state (26). In particular, "what were viewed as the essential supports for a training in virtue -- and hence, preconditions for liberty from tyranny -- came to be viewed as sources of oppression arbitrariness, and limitation" (25).
+
 3. Overturning "philosophical traditions... [such as] emphasis upon acceptance in favor of belief in an expanding and potentially limitless human capacity to control circumstance and effect human desires upon the [natural] world" (26). In particular, Deneen references the use of science and technology in the dominion of humanity over natural limits, for the purposes of economic growth and the expansion of individual liberty.
 
 These preliberal revolutions in thought lead to the following philosophical principles of liberalism.
 
 1. Liberal volunteerism - The idea the that legitimacy is conferred by the unfettered and autonomous choice of individuals (31).
 2. The war against nature - Liberalism rejects early political thought (especially Aristotelian thought) that everything has a basic function, given by nature and unalterable, in favor of two replacements that now, Deneen writes, form the dividing line between conservative and progressive liberalism.
-
-* Conservative liberalism insists "that man should employ natural science and a transformed economic system to seek a mastery of nature" (35).
-* Progressive liberals "reject the idea that human nature is fixed" (36) and "increasingly approve of nearly any technical means of liberating humans from the biological nature of our own bodies" (37).
+  * Conservative liberalism insists "that man should employ natural science and a transformed economic system to seek a mastery of nature" (35).
+  * Progressive liberals "reject the idea that human nature is fixed" (36) and "increasingly approve of nearly any technical means of liberating humans from the biological nature of our own bodies" (37).
 
 The revolutions in thought lead to a world in which "humanity [is] liberated from constitutive communities (leaving only loose connections) and nature harnessed and controlled, [so]... autonomous liberty expands seemingly without limit" (38). Liberalism, in this world, succeeds at providing enormous liberty. Simultaneously, however, Deneen writes that the state must expand to "regulate behavior through the imposition of positive law" (38), behavior that was once dictated informally by social and cultural norms. Deneen's words describe a world in which humanity increasingly liberated, but in order to maintain these new rights, the state must enact increasingly invasive laws.
  
@@ -41,8 +43,8 @@ There's also a human element to the success of a society, and it's often hard to
 The arguments Deneen makes in first bit of the book feel new and it seems plausible that liberalism has surfaced (and perhaps even caused to some extent) many modern problems from areas where it lacks self-consistency (i.e. rights that conflict with one another). The description of the feedback loop doesn't quite sit right with me yet, so I'm interested to read on as he develops his argument.
 
 
-1. test
-2. test
+- test
+- test
 
 
 [1] Deneen, Patrick J, 2018. _Why Liberalism Failed_. https://www.amazon.com/-/es/Patrick-J-Deneen/dp/0300223447
