@@ -24,8 +24,9 @@ These preliberal revolutions in thought lead to the following philosophical prin
 
 1. Liberal volunteerism - The idea the that legitimacy is conferred by the unfettered and autonomous choice of individuals (31).
 2. The war against nature - Liberalism rejects early political thought (especially Aristotelian thought) that everything has a basic function, given by nature and unalterable, in favor of two replacements that now, Deneen writes, form the dividing line between conservative and progressive liberalism.
-  * Conservative liberalism insists "that man should employ natural science and a transformed economic system to seek a mastery of nature" (35).
-  * Progressive liberals "reject the idea that human nature is fixed" (36) and "increasingly approve of nearly any technical means of liberating humans from the biological nature of our own bodies" (37).
+
+* Conservative liberalism insists "that man should employ natural science and a transformed economic system to seek a mastery of nature" (35).
+* Progressive liberals "reject the idea that human nature is fixed" (36) and "increasingly approve of nearly any technical means of liberating humans from the biological nature of our own bodies" (37).
 
 The revolutions in thought lead to a world in which "humanity [is] liberated from constitutive communities (leaving only loose connections) and nature harnessed and controlled, [so]... autonomous liberty expands seemingly without limit" (38). Liberalism, in this world, succeeds at providing enormous liberty. Simultaneously, however, Deneen writes that the state must expand to "regulate behavior through the imposition of positive law" (38), behavior that was once dictated informally by social and cultural norms. Deneen's words describe a world in which humanity increasingly liberated, but in order to maintain these new rights, the state must enact increasingly invasive laws.
  
@@ -40,7 +41,8 @@ There's also a human element to the success of a society, and it's often hard to
 The arguments Deneen makes in first bit of the book feel new and it seems plausible that liberalism has surfaced (and perhaps even caused to some extent) many modern problems from areas where it lacks self-consistency (i.e. rights that conflict with one another). The description of the feedback loop doesn't quite sit right with me yet, so I'm interested to read on as he develops his argument.
 
 
-* test
+1. test
+2. test
 
 
 [1] Deneen, Patrick J, 2018. _Why Liberalism Failed_. https://www.amazon.com/-/es/Patrick-J-Deneen/dp/0300223447
