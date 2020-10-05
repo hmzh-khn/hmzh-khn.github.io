@@ -29,7 +29,7 @@ In the first two sections of __Why Liberalism Failed__, Deneen examines the revo
 
 These preliberal revolutions in thought lead to the following philosophical principles of liberalism.
 
-*1.* Liberal volunteerism - The idea the that legitimacy is conferred by the unfettered and autonomous choice of individuals (31).
+*1.* Liberal volunteerism - The idea that legitimacy is conferred by the unfettered and autonomous choice of individuals (31).
 
 *2.* The war against nature - Liberalism rejects early political thought (especially Aristotelian thought) that everything has a basic function, given by nature and unalterable, in favor of two replacements that now, Deneen writes, form the dividing line between conservative and progressive liberalism.
 
