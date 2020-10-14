@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Technology and Liberalism
 date: 2020-10-13
 categories:
   - All Posts
