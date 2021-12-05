@@ -4,7 +4,7 @@ title: Designing an Unscented Kalman Filter
 date: 2018-05-04
 categories:
   - All Posts
-  - Personal Projects
+  - Projects
 description: An unscented Kalman filter designed for my Autonomous Robotic Navigation class.
 image: /assets/img/UKF.jpg
 ---

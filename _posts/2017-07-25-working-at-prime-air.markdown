@@ -4,10 +4,10 @@ title: Working at Amazon Prime Air
 date: 2017-07-25
 categories:
   - All Posts
-  - Career Musings
 description: My experience interning at Amazon Prime Air.
 image: /assets/img/quartz-amazon-prime-air.jpg
 ---
+
 *The views expressed here are my own, and do not represent the views of Amazon.*
 
 In May, I started working at [Amazon Prime Air][primeair-site], a project within Amazon that's using drones to [safely deliver packages within 30 minutes][video1]. Prime Air is doing a lot of innovative work to make this vision a reality, and I love being able to contribute to such an awesome project that will change the way we imagine delivery in such a drastic way.
