@@ -13,3 +13,4 @@ package.json
 *.out
 *.aux
 *.fdb_latexmk
+vendor/

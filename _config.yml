@@ -7,7 +7,7 @@ google_analytics: UA-56817090-1
 
 # SEO settings
 title: Hamzah Khan
-description: Muslim American, Computer Scientist, Roboticist, Harvey Mudd Student, and more
+description: Computer Scientist, Roboticist, Graduate Student at UT Austin, and more
 url: "Hamzah Khan's website"
 twitter_username: hamzahikhan
 default_img: /assets/img/Self_Photo.jpg
@@ -25,8 +25,10 @@ social:
 
 # Build settings
 include: ["_categories"]
-exclude: ["_screenshots", "Gemfile", "Gemfile.lock"]
+exclude: ["_screenshots", "Gemfile", "Gemfile.lock", "vendor"]
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
 permalink: /:year/:month/:day/:title/
 
 # Sass
@@ -35,4 +37,4 @@ sass:
   style: compressed
 
 # Gems
-gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
+plugins: [jekyll-paginate, jekyll-sitemap, kramdown-parser-gfm, octopress-autoprefixer]
