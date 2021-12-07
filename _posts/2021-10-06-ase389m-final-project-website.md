@@ -37,28 +37,41 @@ The discrete-time dynamics of the vehicle are approximately
 
 $$\mathbf{x}_{t+1}=f\!\left(\mathbf{x}_t,\mathbf{u}_t\right)=\begin{bmatrix}x_t+v_t\cos\vartheta_t\Delta t\\y_t+v_t\sin\vartheta_t\Delta t\\\vartheta_t+\omega_t\Delta t\\v_t+a_t\Delta t\end{bmatrix}\,.$$
 
-Define the error state and controls \\(\Delta\mathbf{x}_t=\mathbf{x}_t-\mathbf{x}_t^\*\\), \\(\Delta \mathbf{u}_t=\mathbf{u}_t-\mathbf{u}_t^\*\\) with respect to some reference trajectory \\(\mathbf{x}_t^\*\\), \\(\mathbf{u}_t^\*\\).
-Taking the Taylor series expansion of the nonlinear error state dynamics about \\(\Delta\mathbf{x}_t=0\\), \\(\Delta\mathbf{u}_t=0\\) and truncating after the first-order terms yields the linear system
+Define the error state and controls \\(\Delta\mathbf{x}_t=\mathbf{x}_t-\mathbf{x}_t^\*\\), \\(\Delta \mathbf{u}^{(i)}_t=\mathbf{u}^{(i)}_t-\mathbf{u}_t^{(i)\*}\\) with respect to some reference trajectory \\(\mathbf{x}_t^\*\\), \\(\mathbf{u}_t^{(i)\*}\\).
+Taking the Taylor series expansion of the nonlinear error state dynamics about \\(\Delta\mathbf{x}_t=0\\), \\(\Delta\mathbf{u}^{(i)}_t=0\\) and truncating after the first-order terms yields the linear system
 
-$$A_t=\begin{bmatrix}1&0&-v_t^*\sin\vartheta_t^*\Delta t&\cos\vartheta_t^*\Delta t\\0&1&\hphantom{-}v_t^*\cos\vartheta_t^*\Delta t&\sin\vartheta_t^*\Delta t\\0&0&1&0\\0&0&0&1\end{bmatrix}\,,B_t=\begin{bmatrix}0&0\\0&0\\\Delta t&0\\0&\Delta t\end{bmatrix}\,.$$
+$$A^{(i)}_t=\begin{bmatrix}1&0&-v_t^{(i)*}\sin\vartheta_t^{(i)*}\Delta t&\cos\vartheta_t^{(i)*}\Delta t\\0&1&\hphantom{-}v_t^{(i)*}\cos\vartheta_t^{(i)*}\Delta t&\sin\vartheta_t^{(i)*}\Delta t\\0&0&1&0\\0&0&0&1\end{bmatrix}\,,B_t=\begin{bmatrix}0&0\\0&0\\\Delta t&0\\0&\Delta t\end{bmatrix}\,.$$
 
-To account for each player having a different reference trajectory, we define the double error state \\(\Delta\mathbf{X}_t=\left[\left(\mathbf{x}_t-\mathbf{x}_t^{\left(1\right)\*}\right)^{\mathsf{T}} ~~ \left(\mathbf{x}_t-\mathbf{x}_t^{\left(2\right)\*}\right)^{\mathsf{T}}\right]^{\mathsf{T}}\\) and the error controls \\(\Delta\mathbf{U}_t\\) similarly.
+To account for each player having a different reference trajectory, we define the double error state \\(\Delta\mathbf{X}_t=\left[\left(\mathbf{x}_t-\mathbf{x}_t^{\left(i\right)\*}\right)^{\mathsf{T}} ~~ \left(\mathbf{x}_t-\mathbf{x}_t^{\left(i\right)\*}\right)^{\mathsf{T}}\right]^{\mathsf{T}}\\) and the error controls \\(\Delta\mathbf{U}^{(i)}_t\\) similarly.
 After solving the game, the actual controls fed into the nonlinear dynamic system are
 
-$$\mathbf{u}_t=\mathbf{u}_t^{\left(1\right)*}+\Delta\mathbf{u}_t^{\left(1\right)}++\Delta\mathbf{u}_t^{\left(2\right)}\,.$$
+$$\mathbf{u}_t=\mathbf{u}_t^{\left(1\right)*}+\Delta\mathbf{u}_t^{\left(1\right)}+\Delta\mathbf{u}_t^{\left(2\right)}\,.$$
 
 The full derivation can be found [here][linearization-derivation].
 
 
 Nash Game Formulation
 ---------------------
-In this section, we describe how we set up and solve LQ Nash feedback games in order to generate the controls for the DeepRacer in simulation and hardware. We set up our game state to include two of the linearized unicycle error-state models described in the previous section, one for each player. Each player has a different hypothesis for the motion model of the DeepRacer, reflected by the different reference trajectories. We define two objective functions that follow:
+In this section, we describe how we set up and solve LQ Nash feedback games in order to generate the controls for the DeepRacer in simulation and hardware. We set up our game state to include two of the linearized unicycle error-state models described in the previous section, one for each player. We combine them as follows.
 
-$$ \text{P1:} \quad \min_{x_{1:T}, u^{(1)}_{1:T}} \sum_{t=1}^T \frac{1}{2} \left(x_t - x^{ref,(1)}_t \right)^2 $$
+$$ A_t = \left[ \begin{array}{cc} A^{(1)}_t & 0 \\ 0 & A^{(2)}_t \end{array} \right], 
+   B^{(1)}_t = B^{(2)}_t \left[ \begin{array}{c} B_t \\ B_t \end{array} \right] $$
 
-$$ \text{P2:} \quad \min_{x_{1:T}, u^{(2)}_{1:T}} \sum_{t=1}^T \frac{1}{2} \left(x_t - x^{ref,(2)}_t \right)^2 $$
+Each player has a different hypothesis for the motion model of the DeepRacer, reflected by the different reference trajectories. We define two objective functions that follow:
 
-The state costs \\( Q^{(i)}_t \\) are constant and equally costed x- and y-position states. The control costs \\( R^{ii}_t \\) are identity and we exlude cross-actor control costs. Once we solve the game for the controls, we then apply the nonlinear dynamics in either simulation or on hardware.
+<!-- $$ \text{P1:} \quad \min_{x_{1:T}, u^{(1)}_{1:T}} \sum_{t=1}^T \frac{1}{2} \left(x_t - x^{ref,(1)}_t \right)^2 $$ -->
+
+<!-- $$ \text{P2:} \quad \min_{x_{1:T}, u^{(2)}_{1:T}} \sum_{t=1}^T \frac{1}{2} \left(x_t - x^{ref,(2)}_t \right)^2 $$ -->
+
+$$ \text{P1:} \quad \min_{x_{1:T}, u^{(1)}_{1:T}} \frac{1}{2} \sum_{t=1}^T
+  \Delta\mathbf{x}_t^{\left(1\right)\mathsf{T}}  Q_t^{\left(1\right)}  \Delta\mathbf{x}_t^{\left(1\right)}
+  + \Delta\mathbf{u}^{(1)\mathsf{T}}_t R^{11}_t \Delta\mathbf{u}_t^{\left(1\right)} $$
+
+$$ \text{P2:} \quad \min_{x_{1:T}, u^{(2)}_{1:T}} \frac{1}{2} \sum_{t=1}^T
+  \Delta\mathbf{x}_t^{\left(2\right)\mathsf{T}}  Q_t^{\left(2\right)}  \Delta\mathbf{x}_t^{\left(2\right)}
+  + \Delta\mathbf{u}^{(2)\mathsf{T}}_t R^{22}_t \Delta\mathbf{u}_t^{\left(2\right)} $$
+
+The state costs \\( Q^{(i)}_t \\) are constant and equally costed x- and y-position states. The control costs \\( R^{ii}_t \\) are identity and we exclude cross-actor control costs. Once we solve the game for the controls, we then apply the nonlinear dynamics in either simulation or on hardware.
 
 In simulation, we select two reference trajectories (complete with reference states and controls) that circle about the origin at radii 10 meters (P1) and 11 meters (P2). We generate these references and run run the system at 10 hertz for 600 cycles (60 seconds).
 
@@ -109,7 +122,7 @@ $$\psi=w^{\mathsf{T}}Aw+Bw+C\,,$$
 
 where \\(w=\left[\omega ~~ v\right]^{\mathsf{T}}\\), and
 
-$$v=c_2\tau^2+c_1\tau+c_0\implies a=2c_2\tau\dot{\tau}+c_1\dot{tau}\implies\Delta\tau=\frac{a\Delta t}{2c_2\tau+c_1}\,.$$
+$$v=c_2\tau^2+c_1\tau+c_0\implies a=2c_2\tau\dot{\tau}+c_1\dot{\tau}\implies\Delta\tau=\frac{a\Delta t}{2c_2\tau+c_1}\,.$$
 
 We demonstrated the Nash game described above on the vehicle, with reduced radii, increased frequency, and a longer initial acceleration phase to make it tractable.
 As the results show, the hardware test was qualitatively similar to the simulation, but with significant overshoot and oscillation in velocity.
@@ -123,7 +136,7 @@ This was likely due to the throttle model being calibrated only at steady-state 
 
 Future Work
 -----------
-*The work described was completed by [Benjamin Reiffler][ben-website] and Hamzah Khan at the University of Texas at Austin for the Modeling Multi-Agent Systems course in Fall 2021.*
+*The work described was completed by [Benjamin Reifler][ben-website] and Hamzah Khan at the University of Texas at Austin for the Modeling Multi-Agent Systems course in Fall 2021.*
 
 - Fix Stackelberg simulation.
 - Design and run experiments with human in the loop to expose limits.
