@@ -7,7 +7,7 @@ categories:
     - Projects
 tags: [multi-agent systems, game theory, inverse games, autonomous systems]
 description: A summary of our work on level-2 inverse games.
-image: /assets/img/aaai-post-aug-8-2025/method_overview.png
+image: /assets/img/aaai-post-aug-8-2025/interaction.png
 ---
 
 Humans regularly try to reason about what others want and what they might do next. Whether it’s merging into traffic, negotiating a salary, or coordinating in a team sport, success often hinges on understanding others’ intentions—and just as importantly, how *they* understand *you*.  
@@ -23,6 +23,8 @@ These situations stem from *mismatched beliefs* about each other’s goals.
 In our recent paper, **[“What Do Agents Think Others Would Do? Level-2 Inverse Games for Inferring Agents’ Estimates of Others’ Objectives”](https://arxiv.org/abs/2508.03824)**, we study how to **formally model and infer agents’ beliefs about one another**—not just what their goals are, but what they *think* others’ goals are. This richer modeling of belief can help explain (and prevent) inefficient, unsafe, or unexpected outcomes.
 
 ---
+
+![An overview of our method.](/assets/img/aaai-post-aug-8-2025/method_overview.png)
 
 ## From Strategic Games to Third-Party Inference
 
