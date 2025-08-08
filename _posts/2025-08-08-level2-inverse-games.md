@@ -15,8 +15,8 @@ Humans regularly try to reason about what others want and what they might do nex
 When these mental models break down, the results can be inefficient—or even dangerous.  
 
 Think about two drivers approaching a merge:
-- If both believe the *other* will yield, they might come to a stop, blocking traffic.
-- If both believe the *other* will go, they might accelerate into a collision.  
+- If both believe the *other* will yield, they might accelerate into a collision.
+- If both believe the *other* will go, they might come to a stop, blocking traffic  
 
 These situations stem from *mismatched beliefs* about each other’s goals.
 
@@ -28,16 +28,14 @@ In our recent paper, **[“What Do Agents Think Others Would Do? Level-2 Inverse
 
 ## From Strategic Games to Third-Party Inference
 
-We often use *games* to model multi-agent interaction, where agents choose actions strategically given their objectives and expectations of others.  
-
-But our work focuses on a **third-party observer**—someone *outside* the game—trying to figure out what each agent is aiming for by watching how they behave. This observer doesn’t directly know the agents’ goals, so they must infer them from actions.
+We use *dynamic games* to model multi-agent interaction, where agents choose actions strategically given their objectives and expectations of others.  
+Our work focuses on a **third-party observer**—someone *outside* the game—trying to figure out what each agent is aiming for by watching how they behave. This observer doesn’t directly know the agents’ goals, so they must infer them from actions.
 
 Here’s the key distinction:
-
-- **Level-1 inference** (what most inverse game methods do): The observer assumes that each agent *knows* the other’s objective. They simply infer those objectives from behavior.  
+- **Level-1 inference** (what most inverse game methods do): The observer assumes that each agent *knows* the other’s objective (which is not known to the third-party observer). They simply infer those objectives from behavior.  
 - **Level-2 inference** (our approach): The observer also considers that agents may hold *incorrect beliefs* about each other’s objectives—and tries to recover *both* the true objectives and each agent’s belief about the other.
 
-In the paper’s front figure, you can see how this plays out. On the right, a level-1 observer assumes the two drivers (P1 and P2) agree on each other’s intentions. On the left, a level-2 observer recognizes that each driver might be reasoning from a different (and wrong) mental model of the other—explaining why their interaction stalls.
+In our paper’s front figure (above), you can see how this plays out. On the right, a level-1 observer assumes the two drivers (P1 and P2) agree on each other’s intentions. On the left, a level-2 observer recognizes that each driver might be reasoning from a different (and wrong) mental model of the other—explaining why their interaction stalls.
 
 ---
 
@@ -46,16 +44,15 @@ In the paper’s front figure, you can see how this plays out. On the right, a l
 We define a **Level-2 inverse game** as follows:  
 Given observed interactions between agents, the third-party observer aims to infer:
 1. Each agent’s true objective.
-2. Each agent’s estimate of the other’s objective.
+2. Each agent’s estimates of the others' objectives.
 
-This turns the problem into one of *nested reasoning*, where we model what each agent thinks the other is trying to achieve.
+This turns the problem into one of *nested reasoning*, where we model what each agent thinks the other is trying to achieve, and the game they believe they are playing with each other agent.
 
 ---
 
 ## How We Solve It
 
-This is a challenging estimation problem—non-convex even in simple linear-quadratic (LQ) games. We tackle it by embedding a differentiable equilibrium solver (specifically, a Mixed Complementarity Problem solver like PATH) inside a gradient-based learning loop.  
-
+This is a challenging estimation problem — non-convex even for simple linear-quadratic (LQ) games (which have analytical solutions). We tackle it by embedding a differentiable equilibrium solver (specifically, a Mixed Complementarity Problem solver like PATH) inside a gradient-based learning loop.
 This lets us simulate the agents’ decision-making process all the way through their beliefs, then adjust those beliefs and objectives until the simulated behavior matches what we observe.
 
 ---
@@ -63,7 +60,7 @@ This lets us simulate the agents’ decision-making process all the way through 
 ## What We Found
 
 We evaluated our method on synthetic LQ games and a realistic lane-changing driving scenario. The results show:
-
+- Level-2 inference is a more expressive framework and can capture outcomes based on mismatched gameplay that level-1 inference can not.
 - **When agents misunderstand each other**, level-2 inference recovers those mismatches, giving the observer a more accurate and nuanced view of what’s happening.
 - Level-1 inference can miss these belief mismatches, often misattributing hesitation or inefficiency to the wrong objective.
 - Our method provides a plausible, structured explanation for deadlocks, over-cautious behavior, and unsafe maneuvers.
