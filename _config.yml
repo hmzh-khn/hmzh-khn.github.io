@@ -1,5 +1,5 @@
 # Site settings
-email: hmzh.khn@gmail.com
+email: 2308491+hmzh-khn@users.noreply.github.com
 baseurl: ""
 paginate: 5
 paginate_path: "/blog/page-:num"
@@ -7,8 +7,8 @@ google_analytics: G-SD92TQKKM0
 
 # SEO settings
 title: Hamzah Khan
-description: Computer Scientist, Roboticist, Graduate Student at UT Austin, and more
-url: "Hamzah Khan's website"
+description: Computer Scientist, Roboticist, Graduate Student at UT Austin, Political Philosophy, History, and more
+url: "Hamzah Khan"
 twitter_username: hamzahikhan
 default_img: /assets/img/Self_Photo.jpg
 
