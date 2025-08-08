@@ -15,7 +15,7 @@ default_img: /assets/img/Self_Photo.jpg
 # Profile settings
 name: Hamzah Khan
 profile_img: /assets/img/Self_Photo.jpg
-profile: 
+profile: Hamzah Khan is a doctoral candidate at UT Austin researching game theory, optimization, and planning for robotics and AI. His personal interests include political philosophy, history, and seeking Islamic knowledge.
 social:
   github: https://github.com/hmzh-khn
   linkedin: https://www.linkedin.com/in/hamzah-khan-02a02b59
