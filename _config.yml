@@ -1,5 +1,53 @@
-# Site settings
-email: 2308491+hmzh-khn@users.noreply.github.com
+
+#
+# This file contains configuration flags to customize your site
+#
+
+# Name of your site (displayed in the header)
+name: Hamzah Khan
+
+# Short bio or description (displayed in the header)
+description: Computer Scientist, Roboticist, Graduate Student at UT Austin, Political Philosophy, History, and more
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: /assets/img/Self_Photo.jpg
+
+#
+# Flags below are optional
+#
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: 2308491+hmzh-khn@users.noreply.github.com
+  facebook:
+  flickr:
+  github: hmzh-khn
+  instagram: hamzahs_view
+  linkedin: hamzah-khan-02a02b59
+  pinterest:
+  rss: # just type anything here for a working RSS icon
+  twitter: hamzahikhan
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: channel/UCGAGEYUAp22WBrDplYAn5Bw # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
+
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqus:
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: G-SD92TQKKM0
+
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
+url: https://www.hamzahkhan.me/
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 paginate: 5
 paginate_path: "/blog/page-:num"
@@ -12,29 +60,37 @@ url: "Hamzah Khan"
 twitter_username: hamzahikhan
 default_img: /assets/img/Self_Photo.jpg
 
-# Profile settings
-name: Hamzah Khan
-profile_img: /assets/img/Self_Photo.jpg
-profile: 
-social:
-  github: https://github.com/hmzh-khn
-  linkedin: https://www.linkedin.com/in/hamzah-khan-02a02b59
-  youtube: https://www.youtube.com/channel/UCGAGEYUAp22WBrDplYAn5Bw
-  twitter: http://twitter.com/hamzahikhan
-  instagram: https://instagram.com/hamzahs_view
+permalink: /:title/
 
-# Build settings
-include: ["_categories"]
-exclude: ["_screenshots", "Gemfile", "Gemfile.lock", "vendor"]
-markdown: kramdown
+# The release of Jekyll Now that you're using
+version: v1.2.0
+
+# Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Use MathJax for mathematical equations
   math_engine: mathjax
-permalink: /:year/:month/:day/:title/
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
 
-# Sass
+# Set the Sass partials directory, as we're using @imports
 sass:
-  sass_dir: _sass
-  style: compressed
+  style: :compressed
 
-# Gems
-plugins: [jekyll-paginate, jekyll-sitemap, kramdown-parser-gfm, octopress-autoprefixer]
+# Use the following plug-ins
+plugins:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - vendor
