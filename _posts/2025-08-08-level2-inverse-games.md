@@ -14,8 +14,8 @@ Humans regularly try to reason about what others want and what they might do nex
 
 When these mental models break down, the results can be inefficient—or even dangerous.  
 
-Think about two drivers approaching a merge:  
-- If both believe the *other* will yield, they might come to a stop, blocking traffic.  
+Think about two drivers approaching a merge:
+- If both believe the *other* will yield, they might come to a stop, blocking traffic.
 - If both believe the *other* will go, they might accelerate into a collision.  
 
 These situations stem from *mismatched beliefs* about each other’s goals.

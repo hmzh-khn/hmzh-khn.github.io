@@ -104,8 +104,33 @@ img {
 ol, ul {
   margin: 0;
   padding: 0;
+}
 
+/* Remove list styling only for navigation elements */
+nav ol, nav ul,
+.nav ol, .nav ul,
+.menu ol, .menu ul,
+.profile__social,
+.tabs,
+.previews ul,
+.cards,
+.pagination {
   list-style-type: none;
+}
+
+/* Restore list styling ONLY for content within blog posts */
+.post ol,
+.post ul {
+  margin: 1em 0;
+  padding-left: 1.5em;
+}
+
+.post ul {
+  list-style-type: disc;
+}
+
+.post ol {
+  list-style-type: decimal;
 }
 
 /**
